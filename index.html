@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Italian Composer or Pasta?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link stuffs -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/flat-ui.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-12"><h1 id="randomword">Vermicelloni</h1></div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-6" id="composer" style="text-align:right;"><h2>Composer</h2></div>
+                    <div class="col-sm-6" id="pasta"><h2>Pasta</h2></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Created for hackTECH 2014</p>
+        </div>
+
+        <script>
+        var pastas = Array("Alfabeto",
+"Anelli",
+"Barbina",
+"Bavette",
+"Bavettine",
+"Bigoli",
+"Bucatini",
+"Calamarata",
+"Calamaretti",
+"Campanelle",
+"Cannelloni",
+"Capellini",
+"Capunti",
+"Casarecce",
+"Cavatappi",
+"Cavatelli",
+"Cellentani",
+"Cencioni",
+"Chifferi",
+"Ciriole",
+"Conchiglie",
+"Conchigliette",
+"Corallini",
+"Corzetti",
+"Croxetti",
+"Ditali",
+"Ditalini",
+"Elicoidali",
+"Fagioloni",
+"Farfalle",
+"Farfalline",
+"Fedelini",
+"Fettuce",
+"Fettucelle",
+"Fideos",
+"Fideua",
+"Fiori",
+"Fregula",
+"Funghini",
+"Fusilli",
+"Garganelli",
+"Gemelli",
+"Gigli",
+"Gramigna",
+"Grattini",
+"Grattoni",
+"Lagane",
+"Lanterne",
+"Linguine",
+"Lumache",
+"Lumaconi",
+"Mafalde",
+"Maltagliati",
+"Mandala",
+"Manicotti",
+"Marille",
+"Marziani",
+"Matriciani",
+"Midolline",
+"Mostaccioli",
+"Orecchiette",
+"Orzo",
+"Paccheri",
+"Pappardelle",
+"Pastina",
+"Pellizzoni",
+"Perciatelli",
+"Pici",
+"Pillus",
+"Pipe",
+"Pizzoccheri",
+"Puntine",
+"Quadrefiore",
+"Radiatori",
+"Ricciolini",
+"Ricciutelle",
+"Rotelle",
+"Rotini",
+"Rotini",
+"Sagnarelli",
+"Scialatelli",
+"Sorprese",
+"Spirali",
+"Stelle",
+"Stortini",
+"Stringozzi",
+"Strozzapreti",
+"Tagliatelle",
+"Talierini",
+"Torchio",
+"Tortiglioni",
+"Trenette",
+"Trenne",
+"Tripoline",
+"Tripolini",
+"Trofie",
+"Tuffoli",
+"Ziti",
+"Zitoni")
+        var composers = Array("Albertini",
+"Albinoni",
+"Alfano ",
+"Allapana ",
+"Allegri",
+"Anfossi ",
+"Bedetti ",
+"Bellini ",
+"Bertali ",
+"Boccherini ",
+"Bononcini  ",
+"Brunetti ",
+"Busoni",
+"Campagnoli ",
+"Carissimi",
+"Casella ",
+"Tedesco ",
+"Catalani ",
+"Cavalieri ",
+"Cavalli ",
+"Cherubini ",
+"Cimarosa ",
+"Clementi ",
+"Corelli ",
+"Carulli",
+"Vittorio ",
+"Donatoni ",
+"Donaudy ",
+"Donizetti",
+"Ferrero",
+"Finzi ",
+"Franchetti",
+"Francesconi ",
+"Frescobaldi ",
+"Gabrieli ",
+"Galuppi ",
+"Gariboldi ",
+"Ghedini ",
+"Giordano",
+"Giuliani ",
+"Jommelli ",
+"Landini",
+"Legrenzi ",
+"Locatelli ",
+"Luchesi ",
+"Luzzaschi ",
+"Mainerio",
+"Malipiero ",
+"Marcello ",
+"Marenzio ",
+"Marini ",
+"Martucci ",
+"Mascagni  ",
+"Mazzocchi ",
+"Mazzazzoli ",
+"Menotti ",
+"Mercadante ",
+"Monteverdi",
+"Ortolani",
+"Ortolano ",
+"Pacini ",
+"Paganini ",
+"Paisiello ",
+"Petrassi",
+"Palestrina ",
+"Pasquini ",
+"Pergolesi ",
+"Piccinni ",
+"Pizzetti ",
+"Ponchielli ",
+"Puccini ",
+"Pugnani ",
+"Rampollini",
+"Respighi ",
+"Rieti ",
+"Rossini ",
+"Sacchini ",
+"Salieri ",
+"Sammartini ",
+"Scarlatti ",
+"Schittino ",
+"Scelsi ",
+"Sciarrino ",
+"Sgambati ",
+"Simonetti ",
+"Spontini ",
+"Steffani ",
+"Strozzi ",
+"Tartini ",
+"Torelli ",
+"Tozzi ",
+"Traetta ",
+"Uccellini ",
+"Valentini ",
+"Veracini ",
+"Venturi ",
+"Viotti ",
+"Vittorio ",
+"Zipoli"
+);
+        var rand = Math.random();
+        if(rand < .5) {
+            var random = pastas[Math.floor(Math.random()*pastas.length)]; //Pasta
+        }
+        else {
+            var random = composers[Math.floor(Math.random()*composers.length)]; //Composer
+        }
+        document.getElementById("randomword").innerHTML=random;
+
+        </script>
+
+        </body>
+    </html>
+
+
